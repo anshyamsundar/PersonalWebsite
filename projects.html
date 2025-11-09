@@ -1,0 +1,589 @@
+<!doctype html>
+<html>
+
+<head>
+<title> S&apos;PressO </title>
+<style>
+
+.grid-container 
+{
+	display: grid;
+	grid-template-columns: 20% auto;
+	grid-template-rows: repeat(94, 50px);
+	gap: 10px;
+	background-color: lightblue;
+	padding: 10px;
+}
+
+.header
+{
+	background-color: #f1f1f1;
+	border-radius: 10px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	grid-area: 1/1/3/-1;
+}
+
+.sidebar
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	justify-content: center; 	
+	grid-area: 3/1/-2/1;
+}
+
+.sidebar-grid-container 
+{
+	
+}
+
+.maincontent
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	grid-area: 3/2/-2/-1;
+	overflow: auto;
+}
+
+.footer
+{
+	background-color: #f1f1f1; 
+	height: 50px; 
+	border-radius: 10px; 
+	display: flex;
+	grid-area: -2/1/-2/-1;
+}
+
+.buttonNavigationStyle:hover { background: lightyellow; }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div class = "header">
+<article>
+  <h1 style="text-align: center;"> ASWADHA NARAYANAN SHYAM SUNDAR</h1>
+  <h2 style="text-align: center;"> Engineer | Aspiring Lawyer | Thinker | Doer </h2>
+</article>
+</div>
+
+<div class="sidebar">
+	<div class="sidebar-grid-container" style="position: sticky; top: 10px;">
+		<table style="width:100%; margin-top:20px;">
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='index.html'">
+						<b>Main</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr style="padding-top:200px;">
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='aboutme.html'">
+						<b>About me</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='resume.html'">
+						<b>Resume</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px; background-color: yellow;" class="buttonNavigationStyle" onclick="window.location.href='projects.html'">
+						<b>Projects</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='mymusings.html'">
+						<b>My musings</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='contact.html'">
+						<b>Contact</b>
+					</button> 
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="maincontent">
+	
+	<BR>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Algorithm development for laser-based sheet warp detection (January 2012 - February 2012)</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The problem statement goes as follows: Given N vertical laser distance measurements of a sheet placed on a flat surface, 
+		find out the direction of sheet warp and the extent of the warp.	
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Zigbee module interfacing using Arduino Duemilanove kit (May 2011-July 2011)</b>
+	</p>	
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The Zigbee module is yet another communication device akin to the Bluetooth. However, the Zigbee offers a much greater 
+		communication range of up to 64 kilometers, depending on the module used. This work was taken up to evaluate the feasilbility 
+		of using Zigbee modules for mobile robots to communicate with each other. The immediate goal was to use this project as a 
+		basis for wireless communication between micro-controllers for the Senior Design Project course (ECE 496) at Clemson University. 
+		Another goal of this project was be able to replace the conventional heavy hand-radio sets with a system that required lighter 
+		and less power hungry hardware.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		 The communication between two MaxStream Zigbee modules was implemented using the Arduino microcontroller kit running the 
+		 ATMega328 micro-controller. Owing to the Zigbee's considerable range and , this work finds applications in a variety of areas 
+		 including telecommunications, healthcare and wireless automation.
+	</p>	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Masters Thesis: Pose Estimation and Robotic Disassembly (January 2010-April 2011)</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The primary goal of this thesis work was to develop an algorithm to estimate the pose(s) of a known set of different object(s) 
+		from a single image. The motivation behind taking up this project was to lay down a framework that could be used and extended 
+		to figure out the most optimal path to disassemble an object assembly into its identifiable constituent components.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		 The algorithm developed uses a combination of various computer vision techniques including color-based segmentation, 
+		 camera calibration and corner detection for identifying various objects in the image and obtaining a coarse estimate 
+		 of their positions. This estimate is fine-tuned using a RANSAC-like algorithm which is used to obtain the positions of 
+		 the objects in the image in terms of the camera coordinates as translational and rotational matrices.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		 The algorithm was used to estimate the pose of 28 objects in 22 images, where some images contain multiple objects. 
+		 The algorithm has been found to work with a 3D mismatch error of less than 2.5cm in 90% of the cases and less than 1cm 
+		 error in 53% of the cases in the dataset used. The algorithm was implemented inMatlab and camera calibration was done in C, 
+		 using the OpenCV computer vision library.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The thesis work can be accessed here.
+	</p>	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Development of Universal Gripper (December, 2010)</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The Universal Gripper is a novel manipulator that relies on the distortion produced by vacuum in an elastic ball partially 
+		filled with coffee grinds. The Coffee grinds are prevented from being sucked into the vacuum pump using a multi-layered 
+		cheese cloth filter supported by a wire gauze.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		 In the first version, a gel-filled stress ball is emptied and partially filled filled with coffee grinds. This arrangement 
+		 is connected to a vacuum pump through a cheesecloth filter. When stress ball is kept on an appropriate object and the vacuum pump is turned on, the air is sucked out and the ball firmly wraps around the object by adopting an appropriate configuration.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		 In the second version, this design was modified to use a thin plastic bag, rather than a polymer cloth that the stress ball used. 
+		 This modification was essential in order to have the manipulator grip and lift larger, smoother objects.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The third version of the universal gripper design utilizes a latex balloon packed with coffee grinds, up to 85% by volume. 
+		The latex balloon performed markedly better than the gripper made using the thin plastic bag in terms of both the strength 
+		of the grip and the stability of the grip. In addition, the balloon proved to be less prone to damage resulting from surface 
+		strain caused by the gripping action.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This project is based on the Universal Gripper developed earlier at Cornell University. The motivation behind exploring this idea 
+		was the necessity of having a reliable gripper that could be adapted for actuating various tasks such as object disassembly 
+		(which was my graduate thesis work) and cleaning up an environment when mounted on a mobile robot.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Here are the gripper version links: first version, second version and the third version.
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Virtual Internship at the Hungarian Academy of Sciences (June-July, 2010)</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The internship involved development of a Python wrapper which could be used for serial port interfacing of generic mobile robot 
+		systems. The work also involved familiarizing with the use of VIRCA (Virtual Collaboration) tool developed by the Cognitive 
+		Informatics Research Group, Hungarian Academy of Sciences in cooperation with the ITM Norwegian - Hungarian Joint Laboratory. 
+		This tool is designed to simulate and control on-field mobile robots through the internet.	
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Development of an Email Client for Smart-Phones (May, 2010)</b>
+	</p>	
+
+	<p style="text-indent: 60px; margin: 20px;">
+		The basic functionality of this application is to be able to send emails from a standard portal and be able to write the 
+		contents into a database simultaneously. The idea behind this is to have a light-weight application, smart-phone compatible 
+		application that would single-handedly allow a user to log into multiple servers and maintain records of emails sent from 
+		different email accounts. The sent emails are stored as records each characterized by the email address mailed to.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The application was developed using Python and Windows Scripting.
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Development of a Bluetooth-based Device tracking system (May, 2010)</b>
+	</p>	
+
+	<p style="text-indent: 60px; margin: 20px;">
+		Statistics show over a million laptops get stolen every year. What is more worrisome is the fact that there is a high probability 
+		of sensitive personal data getting into the wrong hands. This project was primarily aimed at combating this problem.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The designed system is based on the bluetooth-based communication between a mobile-phone device which is carried by the user at all 
+		times and the remote laptop. The laptop and the mobile device are initially paired securely. Either the laptop or the mobile phone 
+		carries a program that polls the other device continuously and receives an acknowledgement signal in return. When the devices go out 
+		of the bluetooth range, the user is immediately alerted either through a sound-file played on the mobile-phone device or on the 
+		laptop. The program also provides additional options to disable the I/O devices (Mouse, Keyboard) on the laptop when the devices 
+		go out of range.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The software was developed using Python (Dependent bluetooth module used is PyBlueZ) and Windows Scripting. Detailed working and 
+		functional specifications can be accessed here.	
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Control of Mobile Robot using Hand-Gestures (March-April, 2010)</b>
+	</p>	
+
+	<p style="text-indent: 60px; margin: 20px;">
+		This work was done towards my final project in Computer Vision. The motivation behind the choice of the topic was to explore the 
+		possibility of developing a more natural, gesture-based interface between humans and machines.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		In this project, algorithms to recognize static and dynamic gestures were developed and were used to control an ActivMedia mobile 
+		robot. The recognized static gestures indicates the pointed direction in a versatile fashion and moves the robot in the direction 
+		pointed. For the dynamic gestures, the user could stand in front of the camera and control a virtual steering wheel using the motion 
+		of either a single fist or both. The program would recognize the steering angle and move the robot accordingly.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The algorithms were prototyped in C++ (IDE: Visual Studio 2008). The libraries used were the Blepo computer vision library 
+		(For standard computer vision modules) and the Aria mobile robot library (For hardware interfacing).	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The project report can be accessed here. A demo video on the same can be found here.	
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Modeled Forces on a General Haptic Interface (Dec, 2009)</b>
+	</p>	
+
+	<p style="text-indent: 60px; margin: 20px;">
+		This was a purely mathematical work which involved modeling a haptic device as a collection of discrete particles connected 
+		by springs, each with its unique spring constant. Formulae were derived to calculate position and velocity of the constituent 
+		particles at a given instant of time when the force vectors are provided.	
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Enhancement of NASA Moon Landing Videos (Nov-Dec, 2009)</b>
+	</p>	
+
+	<p style="text-indent: 60px; margin: 20px;">
+		This work was done towards my final project in Digital Image Processing. The objective was to develop an algorithm that would 
+		eliminate background white noise in any given image. The algorithm developed over the course of the project could be used to 
+		clean any video sequence provided the noise levels between successive frames don't vary heavily.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The algorithm was prototyped in MATLAB and was tested on the NASA moon landing videos. The original video had a lot of background 
+		noise and poor contrast. Two variants of the algorithm was run over the original sequence and videos with lower noise levels 
+		and better contrast were obtained.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The project report can be accessed here.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Demo Videos: Original noisy video; Cleaned video - Version 1; Cleaned video - Version 2	
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Design of Pong Game GUI for a gaming robot (Sept-Oct, 2009)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		The conventional pong game assumes elastic collisions where no energy is lost by the ball when it hits the pads. 
+		Thus, would not help us predict the position and velocity of a real ball at a given instant of time.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The program essentially simulates the pong game for a ball whose coefficient of restitution was specified. 
+		Therefore, for known board dimensions, given an initial velocity and position for a ball whose coefficient of restitution 
+		is known,  one could predict its future position and velocity so as to be able to control the pads to hit the moving ball 
+		at the appropriate instant. The software was written using Windows scripting.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The idea behind the task is to eventually design a robot that would play a pong game against a human player without the use 
+		of a vision system. One pad is autonomous and is controlled by the computer, while the other pad is teleoperated by a human. 
+		The pads are given only 1 degree of freedom so that the problem is mathematically solvable.	
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Amphibious Robotic Vehicle (January-March, 2009)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		Towards my senior-level undergraduate project, I was involved in the development of an Amphibious Robotic vehicle. 
+		The robot being developed right from the scratch, the work comprised of a plethora of tasks, ranging from the mechanical design 
+		to the internal electronic circuitry.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		In addition to the robot being water resistant and capable of sustaining loads of up to 50 kilograms theoretically, 
+		the physical design integrated the land and water propellers into one unit so as to minimize the cost. The internal electronics 
+		essentially consists of 4 stages: 1.)Transmission/Reception 2.) High frequency amplification 3.) Frequency to analog voltage 
+		conversion 4.) Analog to digital conversion and control. Each frequency transmitted is uniquely interpreted upon reception so 
+		as to enable the vehicle to execute motion in a different direction. Here, 4 different frequencies are interpreted so as to 
+		enable motion in forward, left, right and reverse directions. Further, an onboard circuit to indicate high moisture levels was 
+		incorporated.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Owing to the uniqueness of the work, this project was fully funded by my Alma mater and was eventually covered by the 
+		national daily news article. A presentation video on the same can be found here.		
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Design of High-Voltage DC-pulse generator (Jan, 2009)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		Molybdenum trioxide nano-particles can be produced by oxidizing molybdenum metal under controlled temperature and pressure. 
+		The process of oxidation is itself initiated by heating a thin wire of molybdenum metal by maintaining a high-voltage DC source 
+		between the ends of the metal strip. While it is worthwhile noting that the oxidation of the metal can be achieved by using a 
+		high voltage AC-signal (Generated using a conventional fly-back transformer), this technique is generally not preferred for the 
+		process owing to skin-effect.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		For this purpose, a circuit that converts an AC signal to a desired value of DC must be used. Now, this might be achieved by 
+		simply using a rectifier at the optput stage of a voltage up-converter. However, the drawback here is that this design is not 
+		flexible enough to tune it to any arbitrary value of DC output voltage.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The designed circuit essentially outputs a tunable high voltage DC as long as a button switch is pressed. An outline of the 
+		circuit can be found here.		
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Design and Development of Filters using CPW Antennas (Nov, 2008)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		A rectangular waveguide behaves like a high-pass filter whose critical frequency depends on the dimension of its cross-section. 
+		A CPW antenna on the other hand behaves like a low-pass filter, whose characteristics are determined by the type of the substrate 
+		used and the dimensions and spacing between the coplanar metal strips. The propagation characteristics of the CPW antennas with 
+		different values of substrate permittivity and dimensions of the metal strips and spacing are studied.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		A band-pass filter constructed using a combination of CPW Antenna and a rectangular waveguide in series is proposed and discussed.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		A paper on the same was published towards the conference proceedings of International Conference on Communications, ICOICT 2009, 
+		Trivandrum, and can be accessed here.		
+	</p>
+	<BR>
+
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Design and Development of a Bio-Implantable Antenna (Aug, 2008)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		This goal of this project was to design and simulate an antenna that could potentially be embedded in humans so that 
+		the health parameters of a patient could be remotely monitored. A circular patch antenna was chosen for this purpose and 
+		software to simulate and generate the radiation pattern and VSWR ratio given substrate parameters and dimensions was developed. 
+		The software incorporated user-friendly features such as text-voice converter and internet-links.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The software was developed using C++ and Windows Scripting.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		A paper on the same was published towards the conference proceedings of International Conference on Communications, 
+		ICOICT 2009, Trivandrum, and can be accessed here.		
+	</p>
+	<BR>
+
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Internship at the Indian Institute of Science, Bangalore (May-June, 2008)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		Over the summer of 2008, I associated myself with a project involving an eighty-axis robot underway at the 
+		Indian Institute of Science, Bangalore. The goal of the project was to design a system that manipulates strings 
+		attached to puppets and make them dance to the played music.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The original design used a 256 MB flash memory card as an external memory device. Consequently, it could not hold 
+		enough data for feeding the controller and the system could not function for more than 15 minutes at a stretch. 
+		Consequently, I interfaced the microcontroller C8051F120X with an SD card that could hold upto 4GB of data and 
+		developed UART protocols for interfacing the microcontroller with the PC.	
+	</p>
+	<BR>
+
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Development of Microwave Components Tutorial Software (Jan-Feb, 2008)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		This software features description of 24 Microwave Components. It was developed towards my final project in 
+		Microwave Electronics. The software has several user friendly features such as Voice Pedagogy, Internet Links 
+		and 36 keyboard shortcuts. It also features an embedded S-parameter calculator/converter.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The software application was built around modules written using Windows Scripting, HTML, CSS, Javascript and Shell Scripting.
+		The project was partially covered by the national daily news article.
+	</p>
+	<BR>
+
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Internship at Air-India (Dec, 2007)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		It was a month-long training at the Electronics and Computer division at Air India headquarters, Chennai. 
+		The instruction was focused on TCP/IP protocols, Network Maintenance and the working of custom computer hardware. 
+		Over the course of my internship, I had hands-on experience in re-assembling an Epson printer right from the scratch.	
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Line-Follower (Jan-March, 2007)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		As an sophomore, I attended two workshops on Robotics organized by the Robotics and Machine Intelligence group at NIT Trichy. 
+		The first workshop focused on building a line-follower robot circuit using an Atmel Atmega8 microcontroller, IR sensors, 
+		motor controllers and related components. Towards the end of the first workshop, I realized that programming a microcontroller 
+		had its limitations - it simply couldn't process realtime data from the IR sensors as fast as I would have liked it to. 
+		Having had a course in digital electronics concurrently, I took up redesigning the circuit with just basic logic blocks.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		I hardcoded the sensor-dependent motor logic in at the output stage of a 1-16 demux (Realized using two 1-8 open-collector demuxes). 
+		I used 4 IR sensors - that gave me a unique 4-digit binary number. This binary number was fed as the control input to the demux. 
+		Appropriate demux outputs were tied to the source through a resistor. There were essentially 2 signals derived from this - each 
+		activates a motor (2 motors were used) when high.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		There were IR detectors that fed a base current to transistors that controlled power supply to motors. 
+		They were used to stop the line-follower at IR signals. After the third IR signal, the logic was to be inverted - the robot 
+		had to follow a white line instead of black. So the IR detectors were interfaced to a digital counter which inverted the 
+		inputs when necessary at the input stage itself using an XOR-Gate.	
+	</p>	
+	<BR>
+
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Attenuating Circuits simulation software (Sept-Oct, 2006)</b>
+	</p>
+
+	<p style="text-indent: 60px; margin: 20px;">
+		The basic functionality of an attenuating circuit is to get a signal of a specific waveform and power level, and output a similar 
+		waveform with a relatively lower power. These circuits are necessary at the input stage of any micro-circuit which operate on very 
+		low input power - High power levels can fry the internal circuitry.	
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Any attenuating circuit is generally characterized by Input impedance (Zi), Output impedance (Zo) and Attenuation(α). 
+		Given these three parameters, and that input impedance equals the output impedance, it is possible to design a unique 
+		L-type equivalent attenuating network for the two effective parameters (Impedance and Attenuation).
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The software generates circuit diagrams of the L-type network, and equivalent circuitry in symmetric form as T, Pi, 
+		Lattice and Bridge type networks. The basic principle that makes this possible is that there is one and only one unique 
+		symmetric circuit of the types mentioned before (T, Pi, Lattice and Bridge) for a given L-type network. The length of the 
+		impedances as represented in the generated circuit varies logarithmically with the values of the impedances.	
+	</p>	
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The application was developed using HTML and C++.	
+	</p>	
+	<BR>
+	
+	<BR>
+	<BR>
+	<BR>
+	<div style="text-align: center; position: relative; top: 20px;">
+	  <a href="#top">Back to top</a>
+	</div>
+	
+</div>
+
+<div class="footer">
+
+<table style="width: 100%;">
+<tr>
+<td style="width: 5%;"> </td>
+<td style="text-align: left; font-size: 16px;">
+<b>S&apos;PressO - Shyam's personal blog</b>
+</td>
+<td style="text-align: right; font-size: 16px;">
+<b>© 2025 Aswadha Narayanan Shyam Sundar</b>
+</td>
+<td style="width: 5%;"> </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

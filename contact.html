@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+<head>
+<title> S&apos;PressO </title>
+<style>
+
+.grid-container 
+{
+	display: grid;
+	grid-template-columns: 20% auto;
+	grid-template-rows: repeat(11, 50px);
+	gap: 10px;
+	background-color: lightblue;
+	padding: 10px;
+}
+
+.header
+{
+	background-color: #f1f1f1;
+	border-radius: 10px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	grid-area: 1/1/3/-1;
+}
+
+.sidebar
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	justify-content: center; 	
+	grid-area: 3/1/-2/1;
+}
+
+.sidebar-grid-container 
+{
+	
+}
+
+.maincontent
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px; 
+	display: flex;
+	grid-area: 3/2/-2/-1;
+	overflow: auto;
+}
+
+.footer
+{
+	background-color: #f1f1f1; 
+	height: 50px; 
+	border-radius: 10px; 
+	display: flex;
+	grid-area: -2/1/-2/-1;
+}
+
+.buttonNavigationStyle:hover { background: lightyellow; }
+
+.buttonFacebookButtonStyle 
+{
+	background-color: #3b5998; /* Facebook blue */
+	color: white;
+	border-radius: 10px;
+	width: 250px;
+	height: 50px;
+	font-size: 16px;
+	transition: background 0.3s ease; /* Smooth transition for background on hover */
+}
+
+.buttonFacebookButtonStyle:hover 
+{
+	background-color: #2d4373;
+}
+
+.buttonLinkedInButtonStyle 
+{
+	background-color: #0077b5; /* Facebook blue */
+	color: white;
+	border-radius: 10px;
+	width: 250px;
+	height: 50px;
+	font-size: 16px;
+	transition: background 0.3s ease; /* Smooth transition for background on hover */
+}
+
+.buttonLinkedInButtonStyle:hover 
+{
+	background-color: #005c8e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div class = "header">
+<article>
+  <h1 style="text-align: center;"> ASWADHA NARAYANAN SHYAM SUNDAR</h1>
+  <h2 style="text-align: center;"> Engineer | Aspiring Lawyer | Thinker | Doer </h2>
+</article>
+</div>
+
+<div class="sidebar">
+	<div class="sidebar-grid-container" style="position: sticky; top: 10px;">
+		<table style="width:100%; margin-top:20px;">
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='index.html'">
+						<b>Main</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr style="padding-top:200px;">
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='aboutme.html'">
+						<b>About me</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='resume.html'">
+						<b>Resume</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='projects.html'">
+						<b>Projects</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='mymusings.html'">
+						<b>My musings</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px; background-color: yellow;" class="buttonNavigationStyle" onclick="window.location.href='contact.html'">
+						<b>Contact</b>
+					</button> 
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="maincontent">
+
+	<div>
+		<article style="width: 100%; text-align: center;">
+			<BR>
+			<b style="font-size:18px">CONTACT INFORMATION</b>
+		</article>
+		
+		<BR>
+		<BR>
+		
+		<p style="text-indent: 60px; margin: 20px;"> 
+			The preferred way to get in touch with me would be by email: a.n.shyamsundar@gmail.com or an.shyamsundar@yahoo.com.
+			<BR>
+			Alternatively, my phone number is +1-469-922-8547. I also use social media occasionally - primarily LinkedIn and Facebook (links below).
+			<BR>
+		</p>		
+		<BR>
+		
+		<p style="text-align: center; margin: 20px;"> 
+			<button class="buttonLinkedInButtonStyle" onclick="window.open('https://www.linkedin.com/in/shyam-sundar-68211217/', '_blank')">
+				Visit My LinkedIn Page
+			</button>
+		</p>
+		<BR>
+		
+		<p style="text-align: center; margin: 20px;"> 
+			<button class="buttonFacebookButtonStyle" onclick="window.open('https://www.facebook.com/a.n.shyamsundar/', '_blank')">
+				Visit My Facebook Page
+			</button>
+		</p>
+		<BR>
+	</div>
+
+	
+</div>
+
+<div class="footer">
+
+<table style="width: 100%;">
+<tr>
+<td style="width: 5%;"> </td>
+<td style="text-align: left; font-size: 16px;">
+<b>S&apos;PressO - Shyam's personal blog</b>
+</td>
+<td style="text-align: right; font-size: 16px;">
+<b>© 2025 Aswadha Narayanan Shyam Sundar</b>
+</td>
+<td style="width: 5%;"> </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

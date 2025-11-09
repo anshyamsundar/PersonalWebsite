@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+<title> S&apos;PressO </title>
+<style>
+
+.grid-container 
+{
+	display: grid;
+	grid-template-columns: 20% auto;
+	grid-template-rows: repeat(15, 50px);
+	gap: 10px;
+	background-color: lightblue;
+	padding: 10px;
+}
+
+.header
+{
+	background-color: #f1f1f1;
+	border-radius: 10px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	grid-area: 1/1/3/-1;
+}
+
+.sidebar
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	justify-content: center; 	
+	grid-area: 3/1/-2/1;
+}
+
+.sidebar-grid-container 
+{
+	
+}
+
+.maincontent
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	grid-area: 3/2/-2/-1;
+	overflow: auto;
+}
+
+.footer
+{
+	background-color: #f1f1f1; 
+	height: 50px; 
+	border-radius: 10px; 
+	display: flex;
+	grid-area: -2/1/-2/-1;
+}
+
+.buttonNavigationStyle:hover { background: lightyellow; }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div class = "header">
+<article>
+  <h1 style="text-align: center;"> ASWADHA NARAYANAN SHYAM SUNDAR</h1>
+  <h2 style="text-align: center;"> Engineer | Aspiring Lawyer | Thinker | Doer </h2>
+</article>
+</div>
+
+<div class="sidebar">
+	<div class="sidebar-grid-container" style="position: sticky; top: 10px;">
+		<table style="width:100%; margin-top:20px;">
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='index.html'">
+						<b>Main</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr style="padding-top:200px;">
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px; background-color: yellow;" class="buttonNavigationStyle" onclick="window.location.href='aboutme.html'">
+						<b>About me</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='resume.html'">
+						<b>Resume</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='projects.html'">
+						<b>Projects</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='mymusings.html'">
+						<b>My musings</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='contact.html'">
+						<b>Contact</b>
+					</button> 
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="maincontent">
+	<article style="width: 100%; text-align: center;">
+		<BR>
+		<b style="font-size:18px">If this doesn't give you an idea about me, I don't know what else will &#128522;</b>
+	</article>
+		
+	<BR>
+	<BR>
+		
+	<p style="text-indent: 60px; margin: 20px;"> 
+		So here's something about me - As you must have already guessed, I am a denizen of the Milky Way galaxy and am a native of the Solar System 
+		living on a planet called Earth. My current center of mass lies approximately at latitude 33.7489° N with the longitude being 84.3881° W. 
+		I'm primarily made up of the elements Carbon, Hydrogen and Oxygen like most living creatures in my vicinity and belong to the class of species 
+		called homosapiens.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;"> 
+		Okay, that bit of information was probably useful to you if you lived anywhere more than a lightyear away from me. 
+		My name is Shyam Sundar and I graduated with an MS in Electrical Engineering from Clemson University, USA. 
+		Prior to this, I pursued by B. Tech in Electronics and Communication Engineering at the National Institute of Technology, Tiruchirappalli, India. 
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;"> 
+		By profession, I am an Electrical and a Software Engineer with a specialization in Robotics, Computer Vision and Control. 
+		I often get asked as to what I prefer doing over the other - designing circuits and systems, or writing software. 
+		As an innate roboticist, I would deem it crippling if I couldn't design and use software and hardware with equal dexterity. 
+		I like to view software and hardware as equally important aspects of a system which are to be carefully crafted and designed 
+		to mesh well with each other if we are to expect the system to work flawlessly.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;"> 
+		Over the last few years, I have additionally been working towards a law degree (which is essentially a full-time job in itself, away from my regular
+		full-time job as a Software Engineer), and I expect to graduate with an LLB degree in December 2025. This decision has been a culmination of a 
+		series of events, both personal and professional. In hindsight, this could arguably be said to be attributable to a stroke of destiny for the religiously
+		inclined, and a causal state of existence for the more scientifically disposed.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;"> 
+		Away from work, I like to learn and experiment with newer programming languages, packages and libraries, not to mention my Arduino 
+		micro-controller kit. Over weekends, I occasionally work as an independent software developer from home and develop custom applications 
+		from open-source tools for client companies. Working as an independent software developer has been a very rewarding experience. 
+		As a engineer, I find it immensely satisfying to see customer-specific applications built from scratch be maintained and used by 
+		clients on a regular basis. A particular habit I have developed since my school days is to try and break the code I write using any means at 
+		my disposal. While this could get a bit messy at times, rewriting and redesigning entire projects to get robust software out to customers 
+		has paid off in the long run.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;"> 
+		Engineering and break-dancing have both been my passion for as long as I can remember. 
+		While in the middle of a really good, challenging project, I usually resort to music and dance to keep me fresh and energized to the finish.
+	</p>
+	
+</div>
+
+<div class="footer">
+
+<table style="width: 100%;">
+<tr>
+<td style="width: 5%;"> </td>
+<td style="text-align: left; font-size: 16px;">
+<b>S&apos;PressO - Shyam's personal blog</b>
+</td>
+<td style="text-align: right; font-size: 16px;">
+<b>© 2025 Aswadha Narayanan Shyam Sundar</b>
+</td>
+<td style="width: 5%;"> </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

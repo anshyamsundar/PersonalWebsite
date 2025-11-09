@@ -1,0 +1,808 @@
+<!doctype html>
+<html>
+
+<head>
+<title> S&apos;PressO </title>
+<style>
+
+.grid-container 
+{
+	display: grid;
+	grid-template-columns: 20% auto;
+	grid-template-rows: repeat(62, 50px);
+	gap: 10px;
+	background-color: lightblue;
+	padding: 10px;
+}
+
+.header
+{
+	background-color: #f1f1f1;
+	border-radius: 10px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	grid-area: 1/1/3/-1;
+}
+
+.sidebar
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	justify-content: center; 	
+	grid-area: 3/1/-2/1;
+}
+
+.sidebar-grid-container 
+{
+	
+}
+
+.maincontent
+{
+	background-color: #f1f1f1; 
+	border-radius: 10px;
+	grid-area: 3/2/-2/-1;
+	overflow: auto;
+}
+
+.footer
+{
+	background-color: #f1f1f1; 
+	height: 50px; 
+	border-radius: 10px; 
+	display: flex;
+	grid-area: -2/1/-2/-1;
+}
+
+.buttonNavigationStyle:hover { background: lightyellow; }
+
+.buttonResumeButtonStyle 
+{
+	background: linear-gradient(45deg, #FFEB3B, #FFC107); /* Gradient from yellow to amber */
+	border-radius: 10px;
+	width: 250px;
+	height: 50px;
+	font-size: 16px;
+	transition: background 0.3s ease; /* Smooth transition for background on hover */
+}
+
+.buttonResumeButtonStyle:hover 
+{
+	background: linear-gradient(45deg, #FFF176, #FFEB3B); /* Darker gradient on hover */
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div class = "header">
+<article>
+  <h1 style="text-align: center;"> ASWADHA NARAYANAN SHYAM SUNDAR</h1>
+  <h2 style="text-align: center;"> Engineer | Aspiring Lawyer | Thinker | Doer </h2>
+</article>
+</div>
+
+<div class="sidebar">
+	<div class="sidebar-grid-container" style="position: sticky; top: 10px;">
+		<table style="width:100%; margin-top:20px;">
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='index.html'">
+						<b>Main</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr style="padding-top:200px;">
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='aboutme.html'">
+						<b>About me</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px; background-color: yellow;" class="buttonNavigationStyle" onclick="window.location.href='resume.html'">
+						<b>Resume</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='projects.html'">
+						<b>Projects</b>
+					</button> 
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='mymusings.html'">
+						<b>My musings</b>
+					</button>
+				</td>
+			</tr>
+			<tr style="height:10px;"> </tr>
+			<tr>
+				<td style="width: 100%; text-align: center;">
+					<button style="border-radius: 10px; font-size: 1.367vw; width: 60%; height: 50px;" class="buttonNavigationStyle" onclick="window.location.href='contact.html'">
+						<b>Contact</b>
+					</button> 
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="maincontent">
+
+	<table style="width: 100%; padding: 20px; margin-top: 20px;">
+		<tr>
+			<td style="width: 50%; text-align: center;">
+				<button class="buttonResumeButtonStyle" onclick="window.location.href='Resume_Shyam_Master_2025_11_09.pdf'"><b>Download Master Resume</b></button>
+			</td>			
+			<td style="width: 50%; text-align: center;">
+				<button class="buttonResumeButtonStyle" onclick="window.location.href='Resume_Shyam_Abridged_2025_11_09.pdf'"><b>Download Abridged Resume</b></button>
+			</td>
+		</tr>
+	</table>
+	
+	<BR>
+	<BR>
+
+	<article style="width: 100%; text-align: center;">
+		<b style="font-size:20px">A.N. Shyam Sundar</b>
+		<BR>
+		<a style="font-size:16px">https://anshyamsundar.github.io/PersonalWebsite/</a>		
+		<HR style="font-size:8px; width:95%; height: 2px; background-color: black;">
+		
+		<table style="width: 95%;">
+			<tr>
+			<td style="width: 5%;"> </td>
+			<td style="text-align: left; font-size: 16px;">
+			<b>9588 Forest Lane, Apt 908, Dallas, TX – 75243</b>
+			</td>
+			<td style="text-align: right; font-size: 16px;">
+			<b>Phone: 1-469-922-8547</b>
+			</td>
+			<td style="text-align: right; font-size: 16px;">
+			<b>Email: an.shyamsundar@yahoo.com</b>
+			</td>
+			<td style="width: 5%;"> </td>
+			</tr>
+		</table>
+	</article>
+	
+	<BR>
+	
+	<article style="width: 95%; position: relative; left: 5%;">
+		<b style="font-size:16px;">EDUCATION:</b>
+		<BR>
+		
+		<table style="width: 100%;">
+			<tr>
+				<td style="width:70%;">		
+					University of London, London, UK
+				</td>
+				<td style="width: 30%;">		
+					Expected Dec 2025
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<b>Bachelor of Laws</b>
+				</td>
+				<td style="width: 30%;">				
+				</td>
+			</tr>
+		</table>
+		<BR>
+		
+		<table style="width: 100%;">
+			<tr>
+				<td style="width:70%;">		
+					Clemson University, Clemson, SC
+				</td>
+				<td style="width: 30%;">		
+					May 2011
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<b>Master of Science in Electrical Engineering</b>
+				</td>
+				<td style="width: 30%;">
+					GPA: 4.00/4.00
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<b>Minor: Computer Science</b>
+				</td>
+				<td style="width: 30%;">
+				</td>
+			</tr>
+		</table>
+		<BR>
+		
+		<table style="width: 100%;">
+			<tr>
+				<td style="width:70%;">		
+					National Institute of Technology, Tiruchirappalli, India
+				</td>
+				<td style="width: 30%;">		
+					June 2009
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<b>Bachelor of Technology in Electronics and Communication Engineering</b>
+				</td>
+				<td style="width: 30%;">
+					GPA: 8.26/10.00				
+				</td>
+			</tr>
+		</table>
+		<BR>
+		
+		<b style="font-size:16px;">RELATED EXPERIENCE:</b>
+		<BR>
+		
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Software Engineer, DCG Systems/Thermo Fisher Scientific</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					July 2012-Present
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;"><b>Principal Developer and Maintainer</b> of Nanoprober and AFM product lines</li>
+		<li style="width: 96%; position: relative; left: 4%;">Train manufacturing teams and oversee all production systems’ software</li>
+		<li style="width: 96%; position: relative; left: 4%;">Spearhead development of Image Processing/Vision Algorithms</li>
+		<li style="width: 96%; position: relative; left: 4%;">Software security, licensing, contracts and legal review/compliance</li>
+		<li style="width: 96%; position: relative; left: 4%;">Hardware interfacing via APIs and protocols</li>
+		<li style="width: 96%; position: relative; left: 4%;">Develop utilities to aid tool configuration, management and enhancements</li>
+		<li style="width: 96%; position: relative; left: 4%;">Troubleshooting, customer escalations and field support</li>
+		<BR>
+		
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Electrical Controls and Software Engineer, Qualitek-VIB</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					Aug 2011-Jul 2012
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;"><b>Lead Applications Engineer</b> for core product lines – QCS and PCS</li>
+		<li style="width: 96%; position: relative; left: 4%;"><b>Principal Developer</b>, new product line – ProTrace Plant Process Monitoring</li>
+		<li style="width: 96%; position: relative; left: 4%;">Allen-Bradley, Modicon PLC programming, troubleshooting and support</li>
+		<BR>
+		
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Independent Software Developer, Trachte Inc.</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					Feb-Jul 2012
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;">Developed a software tool for auto-data migration between databases</li>
+		<BR>
+
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Graduate Assistant, Analysis of Linear Systems</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					Aug 2010-May 2011
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;">Grading weekly assignments and maintenance of class grade database</li>
+		<li style="width: 96%; position: relative; left: 4%;">Preparing fresh course materials and typesetting current course handouts</li>
+		<BR>
+		
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Summer Intern, Robotics and Virtual Reality, Hungarian Academy of Sciences</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					Jun-Aug 2010
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;">Developed a python wrapper for serial interfacing a general mobile robot</li>
+		<li style="width: 96%; position: relative; left: 4%;">Got acquainted with VIRCA, an online robot virtual collaboration tool</li>
+		<BR>
+		
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Summer Intern, Robotics, Indian Institute of Science, Bangalore</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					May-June 2008
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;">SD card interfacing using microcontroller C8051F12X</li>
+		<li style="width: 96%; position: relative; left: 4%;">Developed UART protocols for PC-microcontroller communication </li>
+		<BR>
+		
+		<table style="width: 98%; position: relative; left: 2%;">
+			<tr>
+				<td style="width:69.5%;">		
+					<b><i>Winter Intern, Computer Hardware and Networking, Air India</i></b>
+				</td>
+				<td style="width: 30.5%;">		
+					Dec 2007
+				</td>
+			</tr>
+		</table>		
+		<li style="width: 96%; position: relative; left: 4%;">Training in operating systems, computer hardware and internet protocols</li>
+		<li style="width: 96%; position: relative; left: 4%;">Hands on experience in assembling desktop CPUs and Epson printers</li>
+		<BR>
+		
+		<b style="font-size:16px;">ENGINEERING PROJECTS:</b>
+		<BR>
+		<table style="width: 100%;">
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Freeze Switch and Load Testing modules for Nanoprober 5</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2025-Nov 2025
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Security and penetration testing for Nanoprober 5 qualification</li>
+				</td>
+				<td style="width: 30%;">		
+					Jun 2025-Nov 2025
+				</td>
+			</tr>			
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Probe motion and path-planning algorithm</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2025-Jun 2025
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Hyperion Atomic Force Microscope platform migration</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2024-Dec 2024
+				</td>
+			</tr>
+			
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Automated probe landing</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2020-Dec 2021
+				</td>
+			</tr>			
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">EBIRCH module to enable EBAC/EBIC imaging</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2019-Dec 2019
+				</td>
+			</tr>			
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Nanoprober platform migration</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2022-Dec 2023
+				</td>
+			</tr>		
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">EBIRCH module to enable EBAC/EBIC imaging</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2019-Dec 2019
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Nanoprober LR and HP product line development</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2017-Dec 2018
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Automated Cross Cleaning</li>
+				</td>
+				<td style="width: 30%;">		
+					Jun 2014-Jan 2016
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">DCM Module charting and enhancements</li>
+				</td>
+				<td style="width: 30%;">		
+					Sep 2013-Dec 2014
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Probe tip detection and auto-focus/wobble/stigmation algorithm</li>
+				</td>
+				<td style="width: 30%;">		
+					Dec 2012-Jun 2014
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">PLL-based force feedback module</li>
+				</td>
+				<td style="width: 30%;">		
+					Jul 2012-Oct 2012
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">ProTrace Plant Process Monitoring Software</li>
+				</td>
+				<td style="width: 30%;">		
+					Dec 2011-Jun 2012
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of a Vision-based corrugated sheet counter</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2012
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Algorithm development for sheet warp detection using laser sensors</li>
+				</td>
+				<td style="width: 30%;">		
+					Dec 2011
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Zigbee interfacing using Arduino Duemilanove development board</li>
+				</td>
+				<td style="width: 30%;">		
+					May 2011-July 2011
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Graduate Thesis: Pose estimation and robotic disassembly</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2010-Apr 2011
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of a Universal Robotic Gripper</li>
+				</td>
+				<td style="width: 30%;">		
+					Dec 2010-Mar 2011
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of an Email Client for Smart-phones</li>
+				</td>
+				<td style="width: 30%;">		
+					May 2010
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of a Bluetooth-based Device tracking system</li>
+				</td>
+				<td style="width: 30%;">		
+					May 2010
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Control of Mobile Robot using Hand-Gestures</li>
+				</td>
+				<td style="width: 30%;">		
+					Mar-Apr 2010
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Modeled forces on a general Haptic Interface Device</li>
+				</td>
+				<td style="width: 30%;">		
+					Dec 2009
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Enhancement of NASA’s Moon Landing Videos</li>
+				</td>
+				<td style="width: 30%;">		
+					Nov-Dec 2009
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Designed a Pong game to be adapted as a GUI for a game-playing robot</li>
+				</td>
+				<td style="width: 30%;">		
+					Sept-Oct 2009
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of an Amphibious Robotic Vehicle</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan-Mar 2009
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Design of high-voltage DC-pulse generator</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan 2009
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Design and Development of Filters using CPW Antennas</li>
+				</td>
+				<td style="width: 30%;">		
+					Nov 2008
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Design and Development of a Bio-Implantable Antenna</li>
+				</td>
+				<td style="width: 30%;">		
+					Aug 2008
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of a Microwave Components tutorial software</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan-Feb 2008
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Designed and Implemented a purely hardware-based Line-Follower Robot</li>
+				</td>
+				<td style="width: 30%;">		
+					Jan-Mar 2007
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Development of Attenuating Circuit Design software</li>
+				</td>
+				<td style="width: 30%;">		
+					Sep-Oct 2006
+				</td>
+			</tr>			
+		</table>
+		<BR>
+		
+		<b style="font-size:16px;">LEGAL WORK:</b>
+		<BR>
+		<table style="width: 100%;">
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Public impact litigation and advocacy, Bhavsar v Const LLC</li>
+				</td>
+				<td style="width: 30%;">		
+					May 2023-Present
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Public impact litigation and advocacy, Re Prime Core Technologies, et al</li>
+				</td>
+				<td style="width: 30%;">		
+					Aug 2023-Present
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Assist Pro Se litigants in family court, bankruptcy and civil litigation</li>
+				</td>
+				<td style="width: 30%;">		
+					Aug 2018-Present
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Public impact litigation and advocacy, Re BlockFi Inc., et al</li>
+				</td>
+				<td style="width: 30%;">		
+					Nov 2022-Jan 2023
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Public impact litigation, Collin County Commissioners Court</li>
+				</td>
+				<td style="width: 30%;">		
+					Oct 2017-Dec 2017
+				</td>
+			</tr>
+			<tr>
+				<td style="width:70%;">		
+					<li style="width: 98%; position: relative; left: 2%;">Texas Small Claims Court filings and arguments</li>
+				</td>
+				<td style="width: 30%;">		
+					Dec 2013-Dec 2015
+				</td>
+			</tr>
+		</table>
+		<BR>
+		
+		<b style="font-size:16px;">SOFTWARE SKILL SET:</b>
+		
+		<p style="margin-top: 5px; margin-left: 2%; margin-right: 2%;"> 
+			<b style="font-size:16px;"><u>Languages:</u></b>
+			<BR>
+			C#, C, C++, Python, Java, Visual Basic, Perl, LISP, SQL, HTML, PHP, Javascript, Ajax, Windows scripting, Verilog, 
+			Assembly languages of microprocessor 8086, microcontrollers 8051, 6811, 6812 and the ARM Processor.
+		</p>
+		
+		<p style="margin-top: 5px; margin-left: 2%; margin-right: 2%;"> 
+			<b style="font-size:16px;"><u>Packages, Frameworks and Libraries:</u></b>
+			<BR>
+			Visual Studio, Dot Net, ASP.NET, gRPC, LightningChart, NI Measurement Studio, Syncfusion Essential Studio, RSLogix 500 and 5000, RSLinx, 
+			Aria, AutoCAD, jQuery, Matlab, Octave, Blepo, OpenCV, EmguCV, OpenGL, PyBlueZ, PySerial, Xlrd/Xlwt, Notepad++/Regex, LaTeX, MathType, 
+			Magick++, CommSim 7, Photonics CAD, Proteus ISIS, Code Composer Studio, Keil, Adobe Photoshop, GIMP, Inkscape, Quartus, VIRCA, Oracle, 
+			NetBeans, VMWare ESXi, TortoiseSVN and Git.
+		</p>
+		
+		<p style="margin-top: 5px; margin-left: 2%; margin-right: 2%;"> 
+			<b style="font-size:16px;"><u>Operating Systems:</u></b>
+			<BR>
+			Windows, Linux (Ubuntu, CentOS), UNIX and Android.
+		</p>
+		
+		<p style="margin-top: 5px; margin-bottom: 5px; margin-left: 2%; margin-right: 2%;"> 
+			<b style="font-size:16px;"><u>Certifications:</u></b>
+			<BR>
+			Certified ScrumMaster, Heartsaver First Aid CPR AED.
+		</p>
+		<BR>
+		
+		<p style="margin-top: 5px; margin-bottom: 5px; margin-right: 2.5%">
+			<b style="font-size:16px;">LEGAL SKILL SET:</b>
+			<BR>
+			Legal strategy, research, drafting, filing, litigation, contract review and negotiation.
+		</p>
+		<BR>
+		
+		<p style="margin-top: 5px; margin-bottom: 5px; margin-right: 2.5%">
+			<b style="font-size:16px;">PATENTS, PUBLICATIONS AND RESEARCH:</b>
+		</p>
+		<ul style="margin-top: 0px; margin-bottom: 0px; margin-right: 2%; position: relative; left: -7px;">
+			<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Capacitance-based detection of probe contact, <b>Shyam Sundar Aswadha Narayanan</b> (US Patent application US-20240385238-A1)</li>
+			<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">“SEM Vision Based Realtime Nanoprober Autofocusing Algorithm” – <b>Shyam Sundar</b>, Sushil Digewade</li>
+			<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">“Pose Estimation for Robotic Disassembly using RANSAC with Line Features” – <b>Shyam Sundar</b>, Dr. Richard Groff</li>
+			<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">“Household Floor Decluttering Using a Mobile Universal Gripper” - Bryan Willimon, Brian Peasley, <b>Shyam Sundar</b>, Steven Hickson, Dr. Stan Birchfield</li>
+			<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">“CPW Structures and Discontinuities” – <b>Aswadha Narayanan Shyam Sundar</b>, Dr. S. Raghavan, Mr. D. Sriram Kumar (International Conference, ICOICT 2009)</li>
+			<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">“Implantable Antennas” – <b>Aswadha Narayanan Shyam Sundar</b>, Dr. S.Raghavan, Mr. D. Sriram Kumar (International Conference, ICOICT 2009)</li>
+		</ul>
+		<BR>
+		
+		<p style="margin-top: 5px; margin-bottom: 5px; margin-right: 2.5%">
+			<b style="font-size:16px;">ACHIEVEMENTS AND AFFILIATIONS:</b>
+		</p>
+			<ul style="margin-top: 0px; margin-bottom: 0px; margin-right: 2%; position: relative; left: -7px;">
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Peer Recognition Awards, Thermo Fisher Scientific, 2021, 2022, 2024, 2025</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Outstanding Employee Award, DCG Systems, 2015</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Bravo Award, DCG Systems, 2013, 2014 and 2015</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Won Gulf Association of Indian Professionals Medal and a Certificate from the Ambassador of India</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">First place in United Nations Examination conducted by the U.N, Gulf</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Second place in “Ingrained”, a national level Microcontroller-based Circuit design competition in India</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Third place in “Sanrachana”, a national level Roller-Coaster mechanism design competition in India</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Alpha Epsilon Lambda Honor Society, Clemson University Chapter</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Omicron Delta Kappa Honor Society, Clemson University Chapter</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Robotics Society of America</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Australian Robotics and Automation Association</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Institute of Electrical and Electronics Engineers</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, ScrumAlliance</li>
+			</ul>
+		<BR>
+		
+		<p style="margin-top: 5px; margin-bottom: 5px; margin-right: 2.5%">
+			<b style="font-size:16px;">LEADERSHIP:</b>
+		</p>
+			<ul style="margin-top: 0px; margin-bottom: 0px; margin-right: 2%; position: relative; left: -7px;">
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Campus Representative, CollegeBookRenter, Clemson University</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Graduate Student Mentor, Clemson University</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Event Coordinator, MuAnaDigix, Circuit designing competition, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Team Leader, National Service Scheme (NSS) Camp, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Coordinator, “Lapis Cup”, Cricketing event of Wisdom Club, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Manager, Tour De NITT, annual cycling event, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Associate Coordinator, Festember ’07, Cultural Festival, NIT Tiruchirappalli</li>
+			</ul>
+		<BR>
+		
+		<p style="margin-top: 5px; margin-bottom: 5px; margin-right: 2.5%">
+			<b style="font-size:16px;">ACTIVITIES:</b>
+		</p>
+			<ul style="margin-top: 0px; margin-bottom: 0px; margin-right: 2%; position: relative; left: -7px;">
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Thermo Fisher Scientific Environmental Health and Safety Committee</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, OSUM Club, Clemson University</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Student Patrol Officer, Clemson University Police Department</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Wisdom Club, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Computer Support Group for Pragyan ’07, Technical Festival, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Organization Committee of Nittfest ’06, Cultural Festival, NIT Tiruchirappalli</li>
+				<li style="margin-top: 5px; margin-bottom: 5px; padding-left: 5px;">Member, Technical Team of Probe ’06,’07 and ’08, Technical Symposium, NIT Tiruchirappalli</li>
+			</ul>		
+		<BR>
+		
+	</article>
+
+	<BR>
+	<BR>
+	<BR>
+	<div style="text-align: center; position: relative; top: 20px;">
+	  <a href="#top">Back to top</a>
+	</div>
+
+</div>
+
+<div class="footer">
+
+<table style="width: 100%;">
+<tr>
+<td style="width: 5%;"> </td>
+<td style="text-align: left; font-size: 16px;">
+<b>S&apos;PressO - Shyam's personal blog</b>
+</td>
+<td style="text-align: right; font-size: 16px;">
+<b>© 2025 Aswadha Narayanan Shyam Sundar</b>
+</td>
+<td style="width: 5%;"> </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
