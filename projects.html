@@ -9,7 +9,7 @@
 {
 	display: grid;
 	grid-template-columns: 20% auto;
-	grid-template-rows: repeat(94, 50px);
+	grid-template-rows: repeat(145, 50px);
 	gap: 10px;
 	background-color: lightblue;
 	padding: 10px;
@@ -67,7 +67,7 @@
 <div class = "header">
 <article>
   <h1 style="text-align: center;"> ASWADHA NARAYANAN SHYAM SUNDAR</h1>
-  <h2 style="text-align: center;"> Engineer | Aspiring Lawyer | Thinker | Doer </h2>
+  <h2 style="text-align: center;"> Engineer | Law Graduate | Thinker | Doer </h2>
 </article>
 </div>
 
@@ -131,12 +131,259 @@
 	<BR>
 	
 	<p style="margin: 20px;">
+		<b style="font-size:16px;">Development of a Low Noise Switch Matrix</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The Nanoprober utilizes various electrical signal sources over the course of its probing and measurement workflows. The Switch Matrix is
+		currently being designed to reroute high-frequency signals to the appropriate probes via software, without the need for manual intervention.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Refactoring, restructuring Nanoprober 5 codebase and architecture</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This is an ongoing work that involves feature development, bug fixes, codebase restructuring/refactoring to improve long-term maintainability of the
+		Nanoprober software.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Freeze Switch and Load Testing modules for Nanoprober 5</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The Freeze Switch is a device that is used to prevent probe drift. The fine positioners on the Nanoprober are in an open loop configuration,
+		with no encoder feedback as to their position, and additionally actuated by piezo crystals. The Freeze Switch controller, in its essence, operates
+		a mechanical relay that cuts off power to the piezo crystals so as to maintain their shape, and minimize probe drift. Here, an API for the freeze switch 
+		was developed and integrated into the Nanoprober software architecture.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The Load Testing module, on the other hand, is an expansive module that runs and manages scripts and workflows for every aspect of tool functionality.
+		Its function is to perform a stress test on tools, and thereby facilitate system qualification. It also collects and categorizes data collected over the 
+		course of multiple rounds of stress testing for further analysis.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Security and penetration testing for Nanoprober 5 qualification</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Nanoprober is subject to various regulatory requirements, such as the EU GDPR and California SB-327. This involved an extensive software
+		licensing and security audit, followed by detailed remediation procedures. The end result was a comprehensive procedure that broke down the requirements into
+		definite, clear and actionable steps that could be followed by manufacturing, operations and field service teams in order for the product to meet
+		global compliance requirements for regular shipments.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Probe motion and path-planning algorithm</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The practical (and math) problem that was tackled and solved here is to detect whether after a given set of motion(s), the probes in a nanoprober
+		have a risk of crashing into each other. To the extent that there is a risk, this risk is minimized by moving the probes in an optimal pattern,
+		depending on the kind of motion executed. This algorithm, at its core, models each motion as a vector and orders the motion vectors in a manner 
+		that maximizes the distances between the vectors, while minimizing intersecting motions.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Hyperion Atomic Force Microscope platform migration</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This involved reworking the entire solution/codebase for the flagship AFM application, resolving driver and other hardware compatibility issues, and
+		obtaining/integrating relevant third party DLLs/APIs for Windows 10 compatibility.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Nanoprober platform migration</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This project involved upgrading the legacy Windows-7 based codebase and applications to be Windows 10 compatible. The Nanoprober software was converted into a true x64 based 
+		application. About eighty C# and C++-based projects within the solution were refactored, with new application installers created from scratch using VS Installer.	
+		This also included interfacing with various third party vendors to obtain x64-based libraries/DLLs/packages used as dependencies by the Nanoprober application.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Automated Probe Landing</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This is a custom landing solution based on computer vision techniques to visually detect a probe touch/land on a specified landing point.
+		This is determined using the abnormal "scoot" of the probe tip that happens upon touch/contact, especially when the probe is vibrated laterally while landing.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">EBIRCH module to enable EBAC/EBIC imaging</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This project integrates new EBIRCH hardware to improve the signal to noise ratio of generated gradient images used for electrical fault isolation.
+		EBIRCH stands for Electron Beam Induced Resistance Change. This is used to detect shorts in the circuit by inducing a local heating effect using
+		the electron beam from the scanning electron microscope. The change in detected current fed between the landing pads (maintained at a specific voltage)
+		would spike in areas where a short is present. Each point of the electron beam scan generates two images - a visual image from scattered electrons, and
+		a corresponding EBIRCH image constructed from the measured current corresponding to each pixel of the scan.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		EBAC stands for Electron Beam Absorbed Current. This technique is used to find opens in the circuit by scanning the circuit with an electron beam, and
+		measuring the detected current at every raster point via landed probes at circuit terminals. Opens are detected at spots where a conductive path ought to 
+		exist per the theoretical design, but doesn't (as evidenced by the lack of detected current).
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		While EBIRCH and EBAC focus on finding physical defects in metal lines, EBIC (Electron Beam Induced Current) is used to analyze the active semiconductor 
+		regions—specifically p-n junctions and the behavior of charge carriers within the silicon itself.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Nanoprober LR and HP product line development</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This project involved heavy reworking of the legacy codebase in order to make two flavors of the Nanoprober tool - the HP which has positioners guided by
+		encoders, and the LR variant which is the lower-cost with positioners employing open-loop controller.
+	</p>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Automated Cross Cleaning</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Tungsten probes such as the one used in Nanoprobers aren't completely immune from oxidation, though they possess immense corrosion 
+		resistance. Over the course of usage, tungsten probes can additionally get contaminated with external artifacts, such as carbon deposits. 		
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The commonly used approach to clean such probes would be to cross two similar probes and pass a carefully calibrated burst of pulse(s) of 
+		current depending on the contamination level. The challenge is that if we pass too much current/power, we risk melting/deforming the probes. Passing
+		too little current would mean that the probes remain dirty. 
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The engineering challenge here was two-fold. One, guide the probes automatically using computer vision and electrical measurement techniques so 
+		as to cross and touch them at the desired cross section. Two, design an optimal pulsing mechanism that would likely clean the probes without 
+		damaging them. This mechanism would also retry a clean if the prior cleaning run hasn't been completely satisfactory.
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">DC Measurement Module charting and enhancements</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This project involved a complete overhaul of the charting tool used by the Nanoprober software. The legacy codebase used 
+		National Instruments charting libraries. This was replaced with a more capable and feature rich LightningChart charting library 
+		from Arction. The motivation was to support multiple X and Y axes, faster charting times as to electrical measurements, and 
+		in general, migrate to a more modern and capable charting tool.		 
+	</p>
+	
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Probe tip detection and auto-focus/wobble/stigmation algorithm</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This project was critical for making the jump from Nanoprober 1 to Nanoprober 2. Nanoprober 1 was fully manual, with no 
+		algorithms to automate the process of bringing the probes to the desired field of view by guiding the probe tips and
+		planing them. The scanning electron microscope's beam characteristics (focus, wobble and stigmation) are used to ensure that
+		the SEM imaging is optimized. The focal distances of the probe tips are used to gauge the Z-locations of the probes and align them
+		on the same Z-plane.		
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The focus metric is calculated using a variance metric of the gradients across the probe tips. The stigmation was optimized by 
+		evaluating geometric symmetry across the probe tips, while the wobble ensures that the electron beam is perpendicular to the 
+		plane of view.
+	</p>
+	
+	<BR>
+
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">PLL-based force feedback module</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The force feedback module is a hardware-based solution to detect probe touch on a surface. The basic principle behind its 
+		operation is akin to that of a tuning fork.		
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		Imagine a probe that is vibrating at a certain frequency. If the probe comes close to or does touch a physical surface, 
+		three parameters change - the amplitude and frequency of the vibration, and the vibration itself experiences a phase shift in tandem 
+		with the change in the frequency. 
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		The Phase-Locked Loop (PLL) is a device that internally tracks a reference signal at a certain pre-defined frequency. The probe is connected
+		to a crystal oscillator that used to generate this reference frequency. The PLL internally implements a PID controller used for
+		exciting this crystal oscillator and locks on to the reference frequency at the point where it peaks in amplitude (resonant frequency). When the probes touch or are
+		close to touching a surface, force applied to the probe as a result of the physical touch or from the Van Der Waals forces of attraction cause
+		a shift in the resonant frequency. The PID control loop within the PLL tries to adjust the excitation signal to match the new resonant frequency.
+		A probe touch can be detected by continuously monitoring for the extent of the change in phase/frequency shift in the excitation signal generated by the PLL - a threshold
+		number can be used to fine-tune the extent of touch. A Soft dB MK3 Open Source PLL controller was used for this project.
+	</p>
+	<BR>	
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">ProTrace Plant Process Monitoring Software</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This is a software that was developed to aggregate data from the factory machine run by the timestamp, and display data - 
+		either between a desired time range, or as a live feed. This data comes from various sensors (such as temperature sensors,
+		moisture sensors and encoders) installed on the single-facer and the double-facer.
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
+		<b style="font-size:16px;">Development of a Vision-based corrugated sheet counter (Jan 2012)</b>
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		This was purely an feasibility study on being able to count the number of corrugated sheets in a given stack using images taken 
+		in a corrugated sheet factory. While an algorithm like the Hough transform to detect lines (and thereby count the number of sheets) proved successful,
+		a vision-based algorithm cannot inherently count the number of sheets reliably when at least some of the sheets are obscured or 
+		are mangled/damaged, or when the lighting is poor.  
+	</p>
+	<BR>
+	
+	<p style="margin: 20px;">
 		<b style="font-size:16px;">Algorithm development for laser-based sheet warp detection (January 2012 - February 2012)</b>
 	</p>
 	
 	<p style="text-indent: 60px; margin: 20px;">
 		The problem statement goes as follows: Given N vertical laser distance measurements of a sheet placed on a flat surface, 
-		find out the direction of sheet warp and the extent of the warp.	
+		find out the direction of sheet warp and the extent/nature of the warp. The practical problem we're trying to solve here is
+		to figure out which ones of the hot rollers (top or bottom) needs to have its temperature adjusted to ensure the corrugated 
+		sheets turn out straight and without any warp.
+	</p>
+	
+	<p style="text-indent: 60px; margin: 20px;">
+		One elegant solution that was arrived at was to approximate a quadratic or a parabola from the measured data using the least squares
+		method. The sign of the value of the coefficient "a" in y = ax<sup>2</sup> + bx + c would indicate the direction of warp. 
 	</p>
 	<BR>
 	
@@ -557,8 +804,6 @@
 	<BR>
 	
 	<BR>
-	<BR>
-	<BR>
 	<div style="text-align: center; position: relative; top: 20px;">
 	  <a href="#top">Back to top</a>
 	</div>
@@ -574,7 +819,7 @@
 <b>S&apos;PressO - Shyam's personal blog</b>
 </td>
 <td style="text-align: right; font-size: 16px;">
-<b>© 2025 Aswadha Narayanan Shyam Sundar</b>
+<b>© 2026 Aswadha Narayanan Shyam Sundar</b>
 </td>
 <td style="width: 5%;"> </td>
 </tr>
